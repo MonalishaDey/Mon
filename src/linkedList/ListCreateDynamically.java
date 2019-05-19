@@ -1,6 +1,6 @@
 package linkedList;
 
-public class CreateListDynamically {
+public class ListCreateDynamically {
 	Node head;
 
 	class Node {
@@ -11,19 +11,18 @@ public class CreateListDynamically {
 			this.data = data;
 			this.next = null;
 		}
-
 	}
 
 	public void create(int data) {
-		Node newnode = new Node(data);
+		Node newNode = new Node(data);
 		if (head == null) {
-			head = newnode;
+			head = newNode;
 		} else {
 			Node current = head;
 			while (current.next != null) {
 				current = current.next;
 			}
-			current.next = newnode;
+			current.next = newNode;
 		}
 
 	}
@@ -37,13 +36,13 @@ public class CreateListDynamically {
 	}
 
 	public static void main(String[] args) {
-		CreateListDynamically cls = new CreateListDynamically();
-		cls.create(10);
-		cls.create(20);
-		cls.create(15);
-		cls.create(30);
-		cls.create(17);
-		cls.show();
+		ListCreateDynamically lcd = new ListCreateDynamically();
+		lcd.create(10);
+		lcd.create(34);
+		lcd.create(23);
+		lcd.create(7);
+		lcd.create(40);
+		lcd.show();
 
 	}
 
