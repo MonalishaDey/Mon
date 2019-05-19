@@ -12,6 +12,8 @@ public class InsertAtPos {
 			this.next = null;
 		}
 	}
+	
+// nameis prakash and i have made the change my{}
 
 	public void insert(int data) {
 		Node newNode = new Node(data);
