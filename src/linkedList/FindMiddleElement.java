@@ -38,14 +38,14 @@ public class FindMiddleElement {
 		System.out.println(" ");
 	}
 
-	public void findMiddle() {
+	public int findMiddle() {
 		Node front = head;
 		Node mid = head;
 		while (front.next != null) {
 			mid = mid.next;
 			front = front.next.next;
 		}
-		System.out.println(" middle number is " + mid.data);
+		return mid.data;
 	}
 
 	public static void main(String[] args) {
@@ -58,7 +58,8 @@ public class FindMiddleElement {
 		fe.create(14);
 		fe.create(37);
 		fe.print();
-		fe.findMiddle();
+		int data = fe.findMiddle();
+		System.out.println(data);
 
 	}
 
