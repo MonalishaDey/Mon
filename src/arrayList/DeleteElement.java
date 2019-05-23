@@ -4,7 +4,7 @@ public class DeleteElement {
 
 	public static void main(String[] args) {
 		int []arr = {10,30,50,20,60};
-		int pos = 3;
+		int pos = 0;
 		int i ;
 		for( i = 0;i<arr.length;i++)
 		{

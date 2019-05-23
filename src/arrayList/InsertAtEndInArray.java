@@ -12,7 +12,6 @@ public class InsertAtEndInArray {
 		arr[3] = 4;
 		arr[4] = 5;
 		int pos = 5;
-		int size = 10;
 		int n = 5;
 		int newvalue = 9 ;
 		for(int i =0 ;i < n ;i++)
